@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:textSize="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginVertical="16dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="priyam"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/tvNumber"
+        android:layout_marginStart="16sp"
+        app:layout_constraintTop_toTopOf="@id/tvNumber"/>
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="paul"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvFirstName"
+        android:layout_marginTop="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvFirstName" />
+
+    <TextView
+        android:id="@+id/tvRollNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22"
+        app:layout_constraintStart_toStartOf="@id/tvFirstName"
+        app:layout_constraintTop_toBottomOf="@id/tvLastName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
